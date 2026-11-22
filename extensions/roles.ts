@@ -59,7 +59,7 @@ export function installRoles(pi: ExtensionAPI, cfg: PiOmpConfig): void {
 		},
 	});
 
-	pi.registerShortcut(Key.ctrlShift("r"), {
+	pi.registerShortcut(Key.ctrlAlt("r"), {
 		description: "Cycle pi-omp model role",
 		handler: (ctx) => {
 			if (!ctx.hasUI) return;
