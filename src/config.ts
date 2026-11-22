@@ -53,7 +53,7 @@ export interface RoleModelConfig {
 	model?: string;
 	/** Thinking level for the role. Omit for the role's default. */
 	thinking?: RoleThinking;
-	/** Whether the role is active (shown in /role + the ctrl+shift+r cycle). Default true. */
+	/** Whether the role is active (shown in /role + the ctrl+alt+r cycle). Default true. */
 	enabled?: boolean;
 }
 

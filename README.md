@@ -12,7 +12,7 @@ Each feature is opt-in and toggled in the settings view:
 |---|---|---|
 | **Personas** | omp's terse evidence-first `default` voice, plus `friendly` / `pragmatic` — `/personality` | on |
 | **Engineering policy** | omp's tool-policy / verification / "never yield incomplete" prose | on |
-| **Model roles** | labeled presets (`@smol`, `@slow`, `@plan`, `@vision`, `@commit`, `@task`) — `/role`, `ctrl+shift+r` | on |
+| **Model roles** | labeled presets (`@smol`, `@slow`, `@plan`, `@vision`, `@commit`, `@task`) — `/role`, `ctrl+alt+r` | on |
 | **`ultrathink`** | standalone prose keyword that injects a reasoning notice | on |
 | **Agent role pack** | `scout`, `reviewer`, `security-reviewer`, `librarian`, `designer` skills | on |
 | **Auto-thinking** | classify the prompt with a cheap model, then set thinking level before the turn | off |

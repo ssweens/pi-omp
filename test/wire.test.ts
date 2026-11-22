@@ -12,7 +12,7 @@ function makeStub() {
 	const pi = {
 		registerTool: (t: { name: string }) => void calls.tools.push(t.name),
 		registerCommand: (n: string) => void calls.commands.push(n),
-		registerShortcut: (_k: string, o: { description?: string }) => void calls.shortcuts.push(o.description ?? "x"),
+		registerShortcut: (key: string) => void calls.shortcuts.push(key),
 		on: (e: string) => void calls.events.push(e),
 		appendEntry: () => {},
 		setModel: async () => true,
@@ -42,6 +42,7 @@ describe("pi-omp wiring", () => {
 		wire(pi as never, DEFAULT_CONFIG);
 		expect(calls.commands).toContain("personality");
 		expect(calls.commands).toContain("role");
+		expect(calls.shortcuts).toContain("ctrl+alt+r");
 		expect(calls.commands).toContain("omp"); // settings always available
 		expect(calls.events).toContain("before_agent_start");
 		expect(calls.events).toContain("input");
